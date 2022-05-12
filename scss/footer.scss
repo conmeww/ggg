@@ -1,0 +1,89 @@
+//====================================================================================================
+
+//====================================================================================================
+.footer {
+  position: relative;
+  background: $first-color;
+  height:15.625vw;
+}
+.footer__img {
+  position: absolute;
+  z-index: 100;
+  &-1 {
+    width:10.417vw;
+    height: 10.417vw;
+    left:4.167vw;
+    top:3.125vw;
+  }
+  &-2 {
+    left: 45.833vw;
+    top: 1.927vw;
+    width: 2.448vw;
+    height: 2.448vw;
+  }
+  &-3 {
+    right: 29.219vw;
+    top: 3.802vw;
+    width: 9.896vw;
+    height: 9.896vw;
+  }
+  &-4 {
+    right:12.344vw;
+    top: 1.042vw;
+    width: 4.896vw;
+    height: 4.896vw;
+  }
+}
+.footer__info {
+  padding-top:3.125vw;
+  p {
+    font-size:0.833vw;
+    padding-bottom:0.833vw;
+    color: $third-color;
+    font-family: "Roboto";
+  }
+}
+.policy {
+  text-decoration: underline !important;
+}
+.logo-box {
+  position: absolute;
+  right: 4.167vw;
+  bottom: 2.604vw;
+}
+.logo-awa {
+  position: relative;
+  width: 76px;
+  height: 38px;
+  cursor: pointer;
+  display: block;
+}
+
+.logo-awa:hover .logo-finish {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.3s ease-out;
+}
+
+.logo-awa:hover .logo-start1 {
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+
+.logo-start1,
+.logo-start {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.logo-start1 {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.logo-finish {
+  opacity: 0;
+  transform: translateX(4px);
+  transition: all 0.3s ease-out;
+}
